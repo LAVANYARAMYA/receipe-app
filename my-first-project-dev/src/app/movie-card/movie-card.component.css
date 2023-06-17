@@ -28,6 +28,7 @@
 .movie-summary {
   margin-top: 0px;
   color: #7c6e6e;
+  text-align: justify;
 }
 
 
@@ -63,4 +64,15 @@
   text-decoration-color: beige;
   text-align: center;
   color: #ed1414;
+  float: left;
+}
+
+.actions{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+   
 }

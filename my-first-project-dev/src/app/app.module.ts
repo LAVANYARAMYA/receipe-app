@@ -30,6 +30,9 @@ import { EditMovieComponent } from './edit-movie/edit-movie.component';
 import { SearchComponent } from './search/search.component';
 import { ReceipeCardComponent } from './receipe-card/receipe-card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -82,6 +85,7 @@ const routes: Routes = [
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
