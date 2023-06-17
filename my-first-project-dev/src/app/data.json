@@ -1,0 +1,41 @@
+[
+  {
+    "id": "100",
+    "name": "Chicken Rice",
+    "poster": "https://th.bing.com/th/id/OIP.foSWCBsiSQym4ehEoExeLQHaKo?w=202&h=290&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "rating": 8.8,
+    "summary": "Hainanese chicken rice is a dish of poached chicken and seasoned rice, served with chilli sauce and usually with cucumber garnishes.",
+    "trailer": "https://www.youtube.com/embed/AG-L71lGvdI",
+    "ingredients":"chicken,rice"
+
+  },
+  {
+    "id": "101",
+    "name": "Chicken Gravy",
+    "poster":"https://th.bing.com/th/id/OIP.cgGDfJuyaHbytRHPo7TlYgHaEK?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "rating": 8.5,
+    "summary":"Gravy is a sauce often made from the juices of meats that run naturally during cooking and often thickened with wheat flour or corn starch for added texture.",
+    "trailer": "https://www.youtube.com/embed/AoPqKq4Wv_E",
+    "ingredients":"chicken"
+
+  },
+  {
+    "id": "102",
+    "name": "Omlet",
+    "poster": "https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg",
+    "rating": 8.1,
+    "summary": "A hunter's life takes a drastic turn when he discovers two million dollars while strolling through the aftermath of a drug deal. He is then pursued by a psychopathic killer who wants the money.",
+    "trailer": "https://www.youtube.com/embed/38A__WT3-o0",
+    "ingredients":"egg"
+  },
+  {
+    "id": "103",
+    "name": "Egg Gravy",
+    "poster":"https://th.bing.com/th/id/OIP.QIdDULbge_YDvlkBCLhNggHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "summary":"Gravy is a sauce often made from the juices of meats that run naturally during cooking and often thickened with wheat flour or corn starch for added texture",
+    "rating": 8.8,
+    "trailer": "https://www.youtube.com/embed/38A__WT3-o0",
+    "ingredients":"egg,veg"
+  }
+  
+]

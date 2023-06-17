@@ -1,0 +1,16 @@
+<div>
+  <input type="text" [(ngModel)]="todo.item" />
+  <button (click)="addTodo()">Add</button>
+</div>
+
+<ul>
+  <li *ngFor="let todo of todos">
+    <input type="checkbox" [checked]="todo.done" (click)="toggleDone(todo)" />
+    <!-- <span style="text-decoration: {{ todo.done ? 'line-through' : 'none' }};">{{
+      todo.item
+    }}</span> -->
+
+    <span [ngClass]="{ done: todo.done }">{{ todo.item }}</span>
+    <button (click)="deleteTodo(todo)">Delete</button>
+  </li>
+</ul>

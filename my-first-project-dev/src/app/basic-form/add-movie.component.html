@@ -1,0 +1,26 @@
+<form [formGroup]="nameForm" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Enter your name" formControlName="username" />
+
+  <!-- {{ "Invalid: " + username?.invalid }} {{ "Touched: " + username?.touched }} -->
+  <div *ngIf="username?.invalid && username?.touched">
+    <p *ngIf="username?.errors?.['required']">Why to fill this name 😉?</p>
+  </div>
+
+  <input type="number" placeholder="Enter your age" formControlName="age" />
+  <!-- <p *ngIf="nameForm.get('age')?.errors?.['required']">
+    Why to fill this age 😉?
+  </p> -->
+
+  <!-- {{ "Invalid: " + age?.invalid }} {{ "Touched: " + age?.touched }} -->
+  <!-- Error && Touch => Better UX  -->
+  <div *ngIf="age?.invalid && age?.touched">
+    <p *ngIf="age?.errors?.['required']">Why to fill this age 😉?</p>
+    <p *ngIf="age?.errors?.['min']">Under aged</p>
+  </div>
+  <button type="submit" [disabled]="nameForm.invalid">Submit</button>
+</form>
+
+<!-- <p>{{ nameForm.status }}</p> -->
+<!-- <p>Errors</p>
+<p>Name: {{ nameForm.get("username")?.errors | json }}</p>
+<p>Age: {{ nameForm.get("age")?.errors | json }}</p> -->
