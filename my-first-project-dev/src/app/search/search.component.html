@@ -1,15 +1,24 @@
 <!-- <p>search works!</p> -->
 
 
-<form [formGroup]="searchForm">
-    <input
-      type="text"
-      placeholder="Enter Ingredients..."
+
+
+
+<form [formGroup]="searchForm" class="form-container">
+  <mat-form-field class="example-full-width">
+    <mat-label>Ingredients</mat-label>
+    <input 
+    matInput
+      placeholder="Ex. Egg..."
       formControlName="Ingredients"
     />
+  </mat-form-field>
   </form>
   
+
+  <div class="receipe">
   <app-receipe-card class="receipes-container" 
           *ngFor="let r of receipes" [receipe]="r">
   
   </app-receipe-card>
+</div>

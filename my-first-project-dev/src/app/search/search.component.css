@@ -4,3 +4,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  .receipe
+  {
+    display: flex;
+    flex-wrap: wrap;
+   
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-bottom: 10px;
+
+  }

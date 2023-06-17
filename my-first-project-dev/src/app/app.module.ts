@@ -29,6 +29,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { EditMovieComponent } from './edit-movie/edit-movie.component';
 import { SearchComponent } from './search/search.component';
 import { ReceipeCardComponent } from './receipe-card/receipe-card.component';
+import {MatCardModule} from '@angular/material/card';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -68,6 +69,7 @@ const routes: Routes = [
     EditMovieComponent,
     SearchComponent,
     ReceipeCardComponent,
+    
   ],
   imports: [
     MatButtonModule,
@@ -79,6 +81,7 @@ const routes: Routes = [
     HttpClientModule,
     MatInputModule,
     MatFormFieldModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

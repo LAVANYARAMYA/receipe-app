@@ -1,4 +1,4 @@
-<div class="movie-container">
+<!-- <div class="movie-container">
   <img class="movie-poster" [src]="movie.poster" [alt]="movie.name" />
   <div class="movie-spec">
     <h2>{{ movie.name }}</h2>
@@ -10,9 +10,34 @@
   <p *ngIf="show" class="movie-summary">{{ movie.summary }}</p>
   <div class="action-items">
     <app-counter></app-counter>
+    
+    <button (click)="delMovie(movie.id)">Delete</button>
+  </div>
+</div> -->
+
+
+
+<mat-card class="res-container">
+  
+  <img mat-card-image [src]="movie.poster" [alt]="movie.name">
+  <mat-card-content>
+    <div class="movie-spec">
+      <h2>{{ movie.name }}</h2>
+      <p>⭐ {{ movie.rating }}</p>
+    </div>
+    <p *ngIf="show" class="movie-summary">{{ movie.summary }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="toggleSummary()">Toggle Summary</button>
+  <button mat-button (click)="goToDetails(movie.id)">Info</button>
+  <button (click)="goToEdit(movie.id)">Edit</button>
+  <div class="action-items">
+    <app-counter></app-counter>
     <!-- Step 1 -->
     <button (click)="delMovie(movie.id)">Delete</button>
   </div>
-</div>
+   
+  </mat-card-actions>
+</mat-card>
 
 <!-- <app-pipes></app-pipes> -->

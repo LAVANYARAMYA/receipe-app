@@ -1,10 +1,25 @@
 <!-- <p>receipe-card works!</p> -->
 
 
-<div class="res-container">
+<!-- <div class="res-container">
     <img class="res-poster" [src]="receipe.poster" [alt]="receipe.name">
     <div class="res-spec"></div>
       <h2 class="name" >{{ receipe.name }}</h2>
       <h2 class="prep-time"> {{receipe.rating}}</h2>
       <p class="res-summary">{{receipe.summary}}</p>
-    </div>
+    </div> -->
+
+
+
+    
+    <mat-card class="res-container">
+      <h2 class="name" >{{ receipe.name }}</h2>
+      <img class="res-poster" mat-card-image [src]="receipe.poster" [alt]="receipe.name">
+      <mat-card-content>
+        <p class="res-summary">
+          {{receipe.summary}}
+        </p>
+      </mat-card-content>
+      
+    </mat-card>
+  
